@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.querySelector(
     ".menu-toggle, .nav-toggle, #menu-toggle, #nav-toggle"
