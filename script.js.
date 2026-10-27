@@ -1,1 +1,23 @@
 
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.querySelector(
+    ".menu-toggle, .nav-toggle, #menu-toggle, #nav-toggle"
+  );
+
+  const navigation = document.querySelector(
+    ".mobile-menu, .nav-menu, #mobile-menu, #nav-menu, nav"
+  );
+
+  if (menuButton && navigation) {
+    menuButton.addEventListener("click", function () {
+      const isOpen = navigation.classList.toggle("active");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+  }
+
+  const year = document.querySelector("#year");
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
+});
+
