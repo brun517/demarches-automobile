@@ -1,128 +1,23 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Démarches Automobile : demandes et suivi de dossiers automobiles en France.">
-  <meta name="theme-color" content="#101a2b">
-  <title>Démarches Automobile — Espace client</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="script.js" defer></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Démarches Automobile : assistance administrative indépendante pour vos démarches automobiles en France. Contact direct par WhatsApp.">
+<meta name="theme-color" content="#101a2b"><title>Démarches Automobile — Assistance automobile</title>
+<style>
+:root{--navy:#101a2b;--navy2:#172740;--gold:#d8b36a;--cream:#f7f5ef;--muted:#b9c2d0;--ink:#182337;--line:#e6e2d9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--navy);color:#fff;line-height:1.6}a{transition:transform .18s,opacity .18s}.wrap{width:min(1120px,92%);margin:auto}.header{display:flex;justify-content:space-between;align-items:center;padding:17px 0;gap:14px;border-bottom:1px solid #ffffff20}.brand{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none}.mark{display:grid;place-items:center;width:43px;height:43px;border:1px solid var(--gold);color:var(--gold);font-weight:800;border-radius:12px}.brand strong{display:block;letter-spacing:.4px}.brand small{display:block;color:var(--gold);letter-spacing:2px;font-size:10px}.btn{display:inline-block;padding:12px 18px;border-radius:9px;text-decoration:none;font-weight:700}.btn:hover{transform:translateY(-1px);opacity:.94}.gold{background:var(--gold);color:#101a2b}.outline{border:1px solid var(--gold);color:var(--gold)}.hero{display:grid;grid-template-columns:1fr .9fr;gap:38px;align-items:center;padding:58px 0 66px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:2px;color:var(--gold);text-transform:uppercase}.hero h1{font-size:clamp(35px,5.6vw,59px);line-height:1.08;margin:12px 0 20px}.hero h1 span{color:var(--gold)}.lead{color:#d4dbe5;font-size:18px;max-width:620px}.note{font-size:12px;color:var(--muted);margin-top:20px}.hero-photo{position:relative;min-height:390px;border-radius:22px;overflow:hidden;background:#25334a}.hero-photo img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block}.photo-overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,#101a2bd9 100%)}.photo-caption{position:absolute;bottom:22px;left:22px;right:22px;font-size:14px;font-weight:700}.photo-caption span{display:block;color:var(--gold);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}.trust-strip{background:#172740;border-top:1px solid #ffffff16;border-bottom:1px solid #ffffff16}.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:20px 0}.trust-item{display:flex;gap:12px;align-items:center}.trust-icon{width:42px;height:42px;flex:none;border:1px solid #d8b36a75;border-radius:12px;display:grid;place-items:center;color:var(--gold);font-size:19px}.trust-item strong{display:block;font-size:14px}.trust-item small{display:block;color:var(--muted);font-size:12px}.section{background:var(--cream);color:var(--ink);padding:56px 0}.section h2{font-size:clamp(27px,4vw,38px);line-height:1.15;margin:6px 0 12px}.section-intro{max-width:720px;color:#526075}.service-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}.service-card{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:0 7px 22px #101a2b0a}.service-card img{display:block;width:100%;height:160px;object-fit:cover}.service-body{padding:20px}.service-body h3{margin:0 0 8px}.service-body p{color:#526075;font-size:14px;margin:0}.service-number{color:#a67d31;font-size:11px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:8px}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:26px}.step{padding:22px;background:#fff;border:1px solid var(--line);border-radius:14px}.step-num{color:#a67d31;font-weight:800;font-size:13px}.step h3{margin:7px 0}.step p{margin:0;color:#526075;font-size:14px}.confidence{background:#fff;border:1px solid var(--line);border-radius:15px;padding:24px;margin-top:30px}.confidence h3{margin-top:0}.confidence ul{padding-left:20px;color:#526075}.contact{background:var(--navy2);color:#fff;border-radius:18px;padding:30px;display:flex;align-items:center;justify-content:space-between;gap:22px;margin-top:30px}.contact p{color:#d4dbe5;margin-bottom:0}.phone{font-weight:800;color:var(--gold);font-size:20px}.footer{padding:26px 0;color:var(--muted);font-size:13px}.footer-row{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer a{color:var(--gold)}.legal-note{font-size:12px;color:#526075;margin-top:20px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:38px 0 44px;gap:26px}.hero-photo,.hero-photo img{min-height:270px}.trust-grid{grid-template-columns:1fr;gap:14px}.service-cards,.steps{grid-template-columns:1fr}.service-card img{height:190px}.contact{display:block}.contact .btn{margin-top:18px}.header .btn{padding:10px 12px;font-size:13px}.section{padding:42px 0}}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="#accueil" aria-label="Démarches Automobile, accueil">
-      <span class="brand-mark">DA</span>
-      <span><strong>Démarches</strong><small> AUTOMOBILE</small></span>
-    </a>
-    <a class="button button-outline header-whatsapp" href="https://wa.me/33773351325" target="_blank" rel="noopener">WhatsApp</a>
-  </header>
-
-  <main>
-    <section class="hero" id="accueil">
-      <div class="hero-copy">
-        <p class="eyebrow">VOS DÉMARCHES AUTOMOBILES EN FRANCE</p>
-        <h1>Vos démarches auto,<br><span>mieux accompagnées.</span></h1>
-        <p class="hero-text">Déposez une demande, échangez avec notre équipe et suivez l’avancement de votre dossier depuis votre espace personnel.</p>
-        <a class="button button-gold" href="#espace">Accéder à mon espace <span aria-hidden="true">→</span></a>
-        <p class="small-note">Service d’assistance administrative indépendant. Nous ne sommes pas le site officiel de l’ANTS.</p>
-      </div>
-      <div class="hero-panel">
-        <p class="eyebrow">NOS SERVICES</p>
-        <div class="service-line"><span class="service-icon">01</span><div><strong>Carte grise</strong><small>Accompagnement aux démarches</small></div></div>
-        <div class="service-line"><span class="service-icon">02</span><div><strong>Levée d’immobilisation</strong><small>Orientation et suivi du dossier</small></div></div>
-        <div class="service-line"><span class="service-icon">03</span><div><strong>Gage et levée de gage</strong><small>Aide administrative</small></div></div>
-        <div class="panel-foot">Clair · Confidentiel · Suivi personnalisé</div>
-      </div>
-    </section>
-
-    <section class="section" id="espace">
-      <div class="section-heading">
-        <p class="eyebrow">ESPACE SÉCURISÉ</p>
-        <h2>Votre espace client</h2>
-        <p>Créez un compte ou connectez-vous pour déposer et consulter vos demandes.</p>
-      </div>
-
-      <div id="setup-warning" class="notice notice-warning hidden">
-        <strong>Configuration à terminer</strong>
-        <p>Le site doit être relié à votre projet Supabase. Suivez le guide README inclus dans le dossier avant d’accepter des demandes réelles.</p>
-      </div>
-
-      <div id="auth-panel" class="content-card">
-        <div class="tabs" role="tablist" aria-label="Connexion ou inscription">
-          <button class="tab active" type="button" data-auth-mode="login">Connexion</button>
-          <button class="tab" type="button" data-auth-mode="signup">Créer un compte</button>
-        </div>
-        <form id="auth-form" class="form-grid">
-          <label class="full">Adresse e-mail<input id="auth-email" type="email" autocomplete="email" required placeholder="vous@exemple.fr"></label>
-          <label class="full">Mot de passe<input id="auth-password" type="password" autocomplete="current-password" minlength="8" required placeholder="8 caractères minimum"></label>
-          <p class="form-hint full" id="auth-hint">Connectez-vous pour accéder à vos dossiers.</p>
-          <button class="button button-gold full" id="auth-submit" type="submit">Se connecter</button>
-          <p class="form-message full" id="auth-message" aria-live="polite"></p>
-        </form>
-      </div>
-
-      <div id="client-panel" class="hidden">
-        <div class="welcome-row content-card">
-          <div><p class="eyebrow">SESSION ACTIVE</p><h3 id="welcome-email">Votre compte</h3><p class="muted">Vos dossiers restent visibles uniquement par vous et les administrateurs autorisés.</p></div>
-          <button class="button button-outline" id="logout-button" type="button">Déconnexion</button>
-        </div>
-
-        <div class="dashboard-grid">
-          <section class="content-card">
-            <p class="eyebrow">NOUVEAU DOSSIER</p>
-            <h3>Faire une demande</h3>
-            <form id="request-form" class="form-grid">
-              <label class="full">Type de démarche
-                <select id="service-type" required>
-                  <option value="">Choisir un service</option>
-                  <option value="Carte grise">Carte grise</option>
-                  <option value="Levée d’immobilisation">Levée d’immobilisation</option>
-                  <option value="Déclaration de gage">Déclaration de gage</option>
-                  <option value="Levée de gage">Levée de gage</option>
-                  <option value="Autre demande">Autre demande</option>
-                </select>
-              </label>
-              <label>Nom et prénom<input id="client-name" autocomplete="name" required maxlength="120"></label>
-              <label>Téléphone<input id="client-phone" type="tel" autocomplete="tel" required maxlength="30" placeholder="+33…"></label>
-              <label class="full">Immatriculation (si applicable)<input id="vehicle-registration" maxlength="20" placeholder="Ex. AB-123-CD"></label>
-              <label class="full">Expliquez votre situation<textarea id="request-details" rows="4" maxlength="4000" required placeholder="Décrivez brièvement votre besoin, sans saisir de données très sensibles ici."></textarea></label>
-              <label class="full">Documents (facultatif, PDF/JPG/PNG, 5 Mo maximum par fichier)
-                <input id="request-files" type="file" accept=".pdf,.jpg,.jpeg,.png,application/pdf,image/jpeg,image/png" multiple>
-              </label>
-              <p class="form-hint full">N’envoyez que les pièces nécessaires. Le stockage des fichiers est privé ; ne téléversez rien avant d’avoir terminé la configuration et testé les accès.</p>
-              <button class="button button-gold full" type="submit">Envoyer ma demande</button>
-              <p class="form-message full" id="request-message" aria-live="polite"></p>
-            </form>
-          </section>
-
-          <section class="content-card">
-            <div class="list-heading"><div><p class="eyebrow">SUIVI</p><h3>Mes dossiers</h3></div><button class="button button-outline button-small" id="refresh-button" type="button">Actualiser</button></div>
-            <div id="request-list" class="request-list"><p class="muted">Chargement de vos dossiers…</p></div>
-          </section>
-        </div>
-      </div>
-
-      <section id="admin-panel" class="content-card hidden admin-card">
-        <p class="eyebrow">ADMINISTRATION</p><h3>Gestion des demandes</h3>
-        <p class="muted">Cette zone n’apparaît que pour un compte autorisé par la base de données.</p>
-        <div id="admin-list" class="request-list"></div>
-      </section>
-    </section>
-
-    <section class="privacy-strip">
-      <div><p class="eyebrow">VOS DONNÉES</p><h2>La confidentialité d’abord.</h2></div>
-      <p>Les demandes sont conçues pour être protégées par authentification et règles d’accès. La sécurité doit être configurée et testée avant toute utilisation réelle. Ne transmettez jamais votre mot de passe ANTS.</p>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div><a class="brand brand-footer" href="#accueil"><span class="brand-mark">DA</span><span><strong>Démarches</strong><small> AUTOMOBILE</small></span></a><p>Assistance administrative automobile indépendante en France.</p></div>
-    <div class="footer-links"><a href="mentions-legales.html">Mentions légales</a><a href="https://wa.me/33773351325" target="_blank" rel="noopener">Nous contacter</a></div>
-    <p class="copyright">© <span id="current-year"></span> Démarches Automobile</p>
-  </footer>
-
-  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
-</body>
-</html>
+<header class="wrap header" id="accueil"><a class="brand" href="#accueil"><span class="mark">DA</span><span><strong>Démarches</strong><small>AUTOMOBILE</small></span></a><a class="btn outline" href="https://wa.me/33773351325?text=Bonjour%2C%20je%20souhaite%20des%20informations%20sur%20vos%20services." target="_blank" rel="noopener">Nous contacter</a></header>
+<main>
+<section class="wrap hero"><div><p class="eyebrow">Vos démarches automobiles en France</p><h1>Vos démarches auto,<br><span>mieux accompagnées.</span></h1><p class="lead">Besoin d’aide pour une démarche automobile ? Présentez-nous votre situation directement sur WhatsApp et nous vous expliquerons les étapes à suivre.</p><a class="btn gold" href="https://wa.me/33773351325?text=Bonjour%2C%20je%20souhaite%20de%20l'aide%20pour%20une%20d%C3%A9marche%20automobile." target="_blank" rel="noopener">Écrire sur WhatsApp →</a><p class="note">Service d’assistance administrative indépendant. Nous ne sommes pas le site officiel de l’ANTS ou de France Titres. Toute démarche reste soumise aux règles et décisions de l’administration.</p></div><div class="hero-photo"><img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85" alt="Voiture moderne photographiée en extérieur" loading="eager"><div class="photo-overlay"></div><div class="photo-caption"><span>Simple • Direct • Transparent</span>Un premier échange pour comprendre votre démarche</div></div></section>
+<div class="trust-strip"><div class="wrap trust-grid"><div class="trust-item"><div class="trust-icon">✓</div><div><strong>Contact direct</strong><small>Échangez avec nous sur WhatsApp</small></div></div><div class="trust-item"><div class="trust-icon">↗</div><div><strong>Sans compte à créer</strong><small>Pas d’inscription ni de mot de passe</small></div></div><div class="trust-item"><div class="trust-icon">€</div><div><strong>Informations claires</strong><small>Demandez les conditions avant intervention</small></div></div></div></div>
+<section class="section" id="services"><div class="wrap"><p class="eyebrow">Nos services</p><h2>Une aide adaptée à votre situation.</h2><p class="section-intro">Expliquez-nous votre besoin. Nous pouvons vous aider à comprendre les étapes et les documents à prévoir selon votre situation.</p><div class="service-cards"><article class="service-card"><img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=900&q=80" alt="Documents et dossier administratif sur un bureau" loading="lazy"><div class="service-body"><div class="service-number">Service 01</div><h3>Carte grise</h3><p>Informations et accompagnement pour vos démarches d’immatriculation et les documents à préparer.</p></div></article><article class="service-card"><img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80" alt="Véhicule dans un atelier automobile" loading="lazy"><div class="service-body"><div class="service-number">Service 02</div><h3>Levée d’immobilisation</h3><p>Comprendre les étapes possibles et les justificatifs à vérifier selon le motif d’immobilisation.</p></div></article><article class="service-card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Voiture stationnée vue de trois quarts" loading="lazy"><div class="service-body"><div class="service-number">Service 03</div><h3>Gage et levée de gage</h3><p>Informations pour comprendre une situation de gage ou d’opposition et les démarches à envisager.</p></div></article></div>
+<p class="eyebrow">Comment ça marche ?</p><h2>Trois étapes, sans créer de compte.</h2><div class="steps"><article class="step"><div class="step-num">ÉTAPE 01</div><h3>Contactez-nous</h3><p>Envoyez un message WhatsApp en précisant la démarche concernée.</p></article><article class="step"><div class="step-num">ÉTAPE 02</div><h3>Expliquez votre situation</h3><p>Nous échangeons avec vous pour comprendre votre besoin et les documents utiles.</p></article><article class="step"><div class="step-num">ÉTAPE 03</div><h3>Vérifiez les conditions</h3><p>Avant toute intervention, demandez les étapes, le prix et les éventuels frais administratifs.</p></article></div>
+<div class="confidence"><h3>Des repères pour vous sentir en confiance</h3><ul><li><strong>Pas de faux compte client :</strong> le contact se fait directement par WhatsApp.</li><li><strong>Transparence :</strong> demandez le détail du prix et des frais avant de vous engager.</li><li><strong>Confidentialité :</strong> ne transmettez que les documents nécessaires, après avoir vérifié à qui vous les envoyez.</li><li><strong>Service indépendant :</strong> aucune affiliation officielle à l’ANTS ou à France Titres n’est revendiquée.</li></ul><p class="legal-note">Les symboles ci-dessus sont des repères d’information, pas une certification officielle, une garantie de résultat ou des avis clients.</p></div>
+<div class="contact"><div><p class="eyebrow">Contact direct</p><h2>Parlons de votre démarche.</h2><p class="phone">+33773351325</p></div><a class="btn gold" href="https://wa.me/33773351325?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20votre%20site%20D%C3%A9marches%20Automobile." target="_blank" rel="noopener">Contacter sur WhatsApp →</a></div><p class="legal-note">Pour votre sécurité, ne partagez jamais votre mot de passe ANTS. Les demandes officielles et les décisions finales relèvent des organismes compétents.</p></div></section>
+</main>
+<footer class="wrap footer"><div class="footer-row"><span>© 2026 Démarches Automobile — Assistance administrative indépendante.</span><a href="mentions-legales.html">Mentions légales</a></div></footer>
+</body></html>
